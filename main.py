@@ -33,7 +33,7 @@ while True:
 
     test = input()
     unit_time += 1
-    if unit_time < 48:
+    if unit_time > 48:
         break
 
 
