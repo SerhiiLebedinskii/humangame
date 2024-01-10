@@ -19,7 +19,7 @@ while True:
         print('Чем займусь')
     event = input('Введите занятие')
     # обновляем состояние персонажа
-    if unit_time > 48:
+    if unit_time < 48:
         break
 
 
