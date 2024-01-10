@@ -11,21 +11,16 @@ test_human = {
 }
 
 
-def general_event(long_term_event):
-    return random.choice(long_term_event)
-
-
-def gender_event(human, events_for_woman, events_for_men):
+def generate_event(human, long_term_event, events_for_woman, events_for_men):
     gender = human['gender']
     if gender == 'male':
-        output_event = random.choice(events_for_men)
+        output_event = random.choice(events_for_men + long_term_event)
     else:
-        output_event = random.choice(events_for_woman)
+        output_event = random.choice(events_for_woman + long_term_event)
     return output_event
 
 
-print(general_event(long_term_events.long_term_event))
-print(gender_event(test_human, small_events.events_for_woman, small_events.events_for_men))
+print(generate_event(test_human, long_term_events.long_term_event, small_events.events_for_men, small_events.events_for_woman))
 
 unit_time = 0
 
