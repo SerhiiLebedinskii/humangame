@@ -12,11 +12,13 @@ work = True
 unit_time = 0
 
 while True:
+    # читаем состояние персонажа
     if work:
         print('Отработал я, чем займусь')
     else:
         print('Чем займусь')
     event = input('Введите занятие')
+    # обновляем состояние персонажа
     if unit_time > 48:
         break
 
