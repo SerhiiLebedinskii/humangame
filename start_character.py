@@ -2,6 +2,7 @@ import random
 #встановлення та підключення наступних бібліотек Faker, pandas
 from faker import Faker
 import pandas as pd
+
 fake = Faker()
 all_names = {}
 for z in range(1):    #возможно создание данных из нескольких локаций fake = Faker(['en_US', 'ja_JP'])
