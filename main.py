@@ -1,5 +1,7 @@
-import long_term_events, small_events
+import long_term_events
 import random
+import small_events
+from start_character import generate_character
 
 test_human = {
     'name': 'John',
@@ -11,6 +13,8 @@ test_human = {
 }
 
 
+test_human = generate_character(test_human)
+
 def generate_event(human, long_term_event, events_for_woman, events_for_men):
     gender = human['gender']
     if gender == 'male':
@@ -20,15 +24,18 @@ def generate_event(human, long_term_event, events_for_woman, events_for_men):
     return output_event
 
 
-print(generate_event(test_human, long_term_events.long_term_event, small_events.events_for_men, small_events.events_for_woman))
-
 unit_time = 0
 
-while True:
+print(test_human)
 
-    test = input()
-    unit_time += 1
-    if unit_time > 48:
-        break
+# while True:
+#     # event
+#     event = generate_event(test_human, long_term_events.long_term_event, small_events.events_for_men,
+#                    small_events.events_for_woman)
+#     print(event)
+#     input()
+#     unit_time += 1
+#     if unit_time > 48:
+#         break
 
 
