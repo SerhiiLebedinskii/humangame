@@ -1,5 +1,6 @@
 import random
-def character()
+
+def character():
     gender_lst = ["male","female"]
     mood_lst = ["normal","good","angry","happy","sad"]
     name = ""
@@ -8,4 +9,4 @@ def character()
     balance = random.randint(1000,100000)
     mood = random.choice(mood_lst)
     time_balance = random.randint()
-    return 
+    return
