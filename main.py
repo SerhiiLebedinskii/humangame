@@ -8,6 +8,7 @@ human = {
     'mood': 5,
     'time_balance': 300
 }
+
 work = True
 
 unit_time = 0
