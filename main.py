@@ -24,7 +24,7 @@ def gender_event(human, events_for_woman, events_for_men):
     return output_event
 
 
-print(general_event())
+print(general_event(long_term_events.long_term_event))
 print(gender_event(test_human, small_events.events_for_woman, small_events.events_for_men))
 
 
