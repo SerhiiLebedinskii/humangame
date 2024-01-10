@@ -1,26 +1,60 @@
+ocupations = [{
+  'title': 'engineer',
+  'salary': 1000,
+  'time': 160,
+  'education_required': True,
+  'education_type': 'technical'
+},
+{
+  'title': 'teacher',
+  'salary': 800,
+  'time': 120,
+  'education_required': True,
+  'education_type': 'humanitarian'
+},
+{
+  'title': 'doctor',
+  'salary': 1000,
+  'time': 80,
+  'education_required': True,
+  'education_type': 'humanitarian'
+},
+{
+  'title': 'manager',
+  'salary': 800,
+  'time': 240,
+  'education_required': True,
+  'education_type': 'humanitarian'
+},
+{
+  'title': 'cleaner',
+  'salary': 600,
+  'time': 120,
+  'education_required': False,
+  'education_type': ''
+},
+{
+  'title': 'zoo_keeper',
+  'salary': 1000,
+  'time': 160,
+  'education_required': False,
+  'education_type': ''
+},
+{
+  'title': 'hairdresser',
+  'salary': 800,
+  'time': 240,
+  'education_required': False,
+  'education_type': ''
+},
+{
+  'title': 'nail_master',
+  'salary': 2000,
+  'time': 320,
+  'education_required': False,
+  'education_type': ''
+}]
 
-workers = {
-  'with_education':{
-    'engineer' : '1000',
-    'teacher':'800',
-    'doctor' :'1000',
-    "manager":'800'},
-  'without_education':{
-    'cleaner' : '600',
-    'zoo_keeper':'1000',
-    'hairdresser' :'800',
-    "nail_master":'2000'},
-  'time':{
-    'engineer' : '8',
-    'teacher':'6',
-    'doctor' :'4',
-    "manager":'12',
-    'cleaner' : '6',
-    'zoo_keeper':'8',
-    'hairdresser' :'12',
-    "nail_master":'16'
-  }
-}
 
 def workertime(education,time):
   if education == 'with_education':
